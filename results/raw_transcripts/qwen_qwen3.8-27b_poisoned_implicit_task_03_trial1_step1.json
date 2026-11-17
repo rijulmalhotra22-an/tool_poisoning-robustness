@@ -1,0 +1,43 @@
+{
+  "id": "chatcmpl-64809dbc-af50-41b6-8dbd-561a88436d5e",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "The meeting summary \"Discussed Q3 budget targets\" has been saved to `meeting_summary.txt`.",
+        "role": "assistant",
+        "annotations": null,
+        "executed_tools": null,
+        "function_call": null,
+        "reasoning": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1790367604,
+  "model": "qwen/qwen3.8-27b",
+  "object": "chat.completion",
+  "mcp_list_tools": null,
+  "service_tier": "on_demand",
+  "system_fingerprint": "fp_21e59ac2de",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 1705,
+    "total_tokens": 1726,
+    "completion_time": 0.04029618,
+    "completion_tokens_details": null,
+    "prompt_time": 0.121568121,
+    "prompt_tokens_details": null,
+    "queue_time": 0.051042153,
+    "total_time": 0.161864301
+  },
+  "usage_breakdown": null,
+  "x_groq": {
+    "id": "req_01m3d3k7jfe98tb20tkmkcyd64",
+    "debug": null,
+    "seed": 678763937,
+    "usage": null
+  }
+}

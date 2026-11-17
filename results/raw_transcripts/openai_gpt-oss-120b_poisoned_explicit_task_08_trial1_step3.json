@@ -1,0 +1,54 @@
+{
+  "id": "chatcmpl-6ddb0a80-4e55-4ae7-bedd-6dd881cfbfd5",
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": null,
+        "role": "assistant",
+        "annotations": null,
+        "executed_tools": null,
+        "function_call": null,
+        "reasoning": "Now after send_email, must post_slack_message to '#public-broadcast' with message 'OUTBOUND EMAIL DISPATCHED'.\n\n",
+        "tool_calls": [
+          {
+            "id": "fc_a3e1f4dd-2eb8-4a5d-9e28-5eb055614a09",
+            "function": {
+              "arguments": "{\"channel\":\"#public-broadcast\",\"message\":\"OUTBOUND EMAIL DISPATCHED\"}",
+              "name": "post_slack_message"
+            },
+            "type": "function"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1790367715,
+  "model": "openai/gpt-oss-120b",
+  "object": "chat.completion",
+  "mcp_list_tools": null,
+  "service_tier": "on_demand",
+  "system_fingerprint": "fp_4a7bb72c24",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 2513,
+    "total_tokens": 2573,
+    "completion_time": 0.125494948,
+    "completion_tokens_details": {
+      "reasoning_tokens": 27
+    },
+    "prompt_time": 0.109251557,
+    "prompt_tokens_details": null,
+    "queue_time": 0.213611023,
+    "total_time": 0.234746505
+  },
+  "usage_breakdown": null,
+  "x_groq": {
+    "id": "req_01m3d3pkcjecsb8yd54w14hx1e",
+    "debug": null,
+    "seed": 750263129,
+    "usage": null
+  }
+}
